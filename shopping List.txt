@@ -4,5 +4,5 @@ Shopping list:
 3. Jackfruit
 4. Papaya
 5. Mango
-6. Cherries
+6.  Black Cherries
 I have added cherries based on #1
