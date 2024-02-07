@@ -3,4 +3,5 @@ Shopping list:
 2. Bananas
 3. Jackfruit
 4. Papaya
-5. Mangoo
+5. Mango
+6. Cherries
