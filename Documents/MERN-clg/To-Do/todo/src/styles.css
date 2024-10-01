@@ -1,0 +1,107 @@
+
+body {
+
+    font-family: Arial, sans-serif; /* Set a default font family */
+    
+    background-image: url('../public/josh-bean-medium-9501ba9f.jpg');
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(2px);
+    height: 100vh; /* Ensure the background covers the entire view */
+}
+
+
+h1{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2em;
+    color: rgba(223, 255, 255, 0.8)
+
+
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 0; /* Add margin between list items */
+    /* background-color: rgba(0, 0, 0, 0); */
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent background for list items */
+    color: rgba(255, 255, 255, 0.8); /* Transparent white text */
+}
+
+input[type="text"] {
+    padding: 5px;
+    font-size: 20px;
+    width: 70%;
+    margin-right: 10px;
+    border: 9px solid white;
+    border-radius: 15px;
+    border: 9px solid rgba(255, 255, 255, 0.5); /* Transparent border */
+}
+
+
+button {
+    padding: 10px;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent button */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.8); /* Dark semi-transparent text */
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Slightly darker on hover */
+}
+
+.delete {
+    width: 100px;
+}
+
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent background for the list */
+    width: 30%;
+ 
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    margin-bottom: 50px;
+    padding: 20px; /* Add padding for better spacing */
+    color: rgba(255, 255, 255, 0.8); /* Transparent form text */
+}
+
+button {
+    background-color: white;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+span {
+    margin-right: 50px;
+    color: rgba(255, 255, 255, 0.8); /* Transparent span text */
+}
+
+.add-task-btn{
+    background-color: white;
+    color: rgba(0, 0, 0, 0.8); /* Dark semi-transparent text */
+    width: 40%;
+    border-radius: 10px;
+    border: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
