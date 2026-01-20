@@ -1,0 +1,66 @@
+.whatsapp-wrapper {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+/* Tooltip */
+.whatsapp-tooltip {
+  position: absolute;
+  right: 70px;
+  bottom: 50%;
+  transform: translateY(50%);
+  background-color: #111;
+  color: white;
+  padding: 8px 12px;
+  font-size: 13px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+/* Tooltip arrow */
+.whatsapp-tooltip::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -6px;
+  transform: translateY(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent transparent transparent #111;
+}
+
+/* Button */
+.whatsapp-float {
+  width: 56px;
+  height: 56px;
+  background-color: #25d366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Exact WhatsApp icon */
+.whatsapp-float i {
+  color: white;
+  font-size: 30px;
+}
+
+/* POP EFFECT ON HOVER */
+.whatsapp-wrapper:hover .whatsapp-float {
+  transform: scale(1.15);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.4);
+}
+
+/* Show tooltip on hover */
+.whatsapp-wrapper:hover .whatsapp-tooltip {
+  opacity: 1;
+  transform: translateY(50%) translateX(-6px);
+}

@@ -1,0 +1,42 @@
+.quote {
+  padding: 80px 40px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.quote h1 {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.quote p {
+  margin-bottom: 32px;
+}
+
+.quote-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.quote-form input,
+.quote-form select,
+.quote-form textarea {
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+.quote-form textarea {
+  min-height: 100px;
+}
+
+.quote-form button {
+  background-color: var(--green);
+  color: white;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 4px;
+}
