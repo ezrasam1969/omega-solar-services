@@ -4,7 +4,8 @@ import './Navbar.css';
 export default function Navbar() {
   return (
     <nav className="navbar">
-      <div className="logo">SolarPower</div>
+      <div className="logo">Omega Solar Services</div>
+
 
       <ul className="nav-links">
         <li><Link to="/">Home</Link></li>

@@ -14,6 +14,8 @@
   font-size: 22px;
   font-weight: 700;
   color: var(--blue);
+  position: relative;
+  margin-left: 60px;
 }
 
 .nav-links {
