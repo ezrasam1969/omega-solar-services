@@ -9,7 +9,7 @@ import './ServicesPreview.css';
 
 export default function ServicesPreview() {
   return (
-    <section className="services">
+    <section className="services" id="services">
       <h2>Our Solar Services</h2>
 
       <div className="services-grid">

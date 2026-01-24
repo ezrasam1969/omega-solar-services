@@ -9,9 +9,9 @@ export default function Navbar() {
 
       <ul className="nav-links">
         <li><Link to="/">Home</Link></li>
-        <li>About</li>
-        <li>Services</li>
-        <li>Projects</li>
+        <li><a href="/#about">About</a></li>
+        <li><a href="/#services">Services</a></li>
+        <li><a href="/#projects">Projects</a></li>
         <li>
           <Link to="/quote">
             <button className="quote-btn">Get Quote</button>

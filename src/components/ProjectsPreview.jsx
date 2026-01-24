@@ -2,7 +2,7 @@ import './ProjectsPreview.css';
 
 export default function ProjectsPreview() {
   return (
-    <section className="projects">
+    <section className="projects" id="projects">
       <h2>Recent Projects</h2>
 
       <div className="projects-grid">

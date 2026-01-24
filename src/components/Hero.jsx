@@ -1,7 +1,10 @@
 import heroImage from '../assets/images/hero-en.jpg';
+import { useNavigate } from 'react-router-dom';
 import './Hero.css';
 
 export default function Hero() {
+  const navigate = useNavigate();
+
   return (
     <section
       className="hero"
@@ -11,7 +14,7 @@ export default function Hero() {
         <div className="hero-content">
           <h1>Save Up to 70% on Electricity Bills with Rooftop Solar</h1>
           <p>Professional solar installation services for homes and buildings</p>
-          <button className="hero-btn">Get Free Quote</button>
+          <button className="hero-btn" onClick={() => navigate('/quote')}>Get Free Quote</button>
         </div>
       </div>
     </section>

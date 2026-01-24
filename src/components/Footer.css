@@ -1,6 +1,92 @@
 .footer {
-  padding: 20px;
-  text-align: center;
-  background-color: var(--gray);
+  background-color: #0b2a4a;
+  color: white;
+  padding-top: 60px;
   font-size: 14px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 40px 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+}
+
+.footer-col h3,
+.footer-col h4 {
+  margin-bottom: 16px;
+  font-size: 18px;
+}
+
+.footer-col p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  color: #dce3ea;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  color: #dce3ea;
+  transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
+  color: #1fa84f;
+}
+
+/* Social icons */
+.social-links {
+  display: flex;
+  gap: 14px;
+  margin-top: 12px;
+}
+
+/* Base button style */
+.social {
+  width: 38px;
+  height: 38px;
+  background-color: #1fa84f;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+/* Common hover effect */
+.social:hover {
+  transform: scale(1.15);
+}
+
+/* Facebook hover */
+.social.facebook:hover {
+  background-color: #1877f2;
+}
+
+/* WhatsApp hover */
+.social.whatsapp:hover {
+  background-color: #25d366;
+}
+
+/* Instagram gradient hover */
+.social.instagram:hover {
+  background: linear-gradient(
+    45deg,
+    #f58529,
+    #dd2a7b,
+    #8134af,
+    #515bd4
+  );
 }
