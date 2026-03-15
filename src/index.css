@@ -31,3 +31,20 @@ button {
 html {
   scroll-behavior: smooth;
 }
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+
+  body {
+    font-size: 15px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+}

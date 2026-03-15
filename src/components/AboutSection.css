@@ -67,3 +67,16 @@
     margin: auto;
   }
 }
+
+
+@media (max-width: 768px) {
+
+  .about-container {
+    padding: 30px 20px;
+  }
+
+  .about-home {
+    text-align: center;
+  }
+
+}

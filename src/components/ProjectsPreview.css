@@ -31,3 +31,12 @@
   padding: 16px;
   font-weight: 500;
 }
+
+
+@media (max-width: 768px) {
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+}

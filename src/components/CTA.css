@@ -18,3 +18,17 @@
   font-weight: 600;
   border-radius: 4px;
 }
+
+
+@media (max-width: 768px) {
+
+  .cta {
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .cta h2 {
+    font-size: 26px;
+  }
+
+}

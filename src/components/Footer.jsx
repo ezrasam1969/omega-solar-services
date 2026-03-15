@@ -1,5 +1,5 @@
 import './Footer.css';
-
+import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <footer className="footer">
@@ -7,7 +7,7 @@ export default function Footer() {
 
         {/* Company Info */}
         <div className="footer-col">
-          <h3>Omega Solar Services</h3>
+          <h3>Omega Solar Systems</h3>
           <p>
             Professional solar installation and civil works for homes,
             commercial buildings, and industries in Hyderabad.
@@ -17,14 +17,29 @@ export default function Footer() {
         {/* Quick Links */}
         <div className="footer-col">
           <h4>Quick Links</h4>
+          {/* <ul>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/about">About</Link></li>
+            <li><Link to="/services">Services</Link></li>
+            <li><Link to="/projects">Projects</Link></li>
+            <li><Link to="/quote">Get Quote</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
+          </ul> */}
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/services">Services</a></li>
-            <li><a href="/projects">Projects</a></li>
-            <li><a href="/quote">Get Quote</a></li>
-            <li><a href="/contact">Contact</a></li>
-          </ul>
+
+  <li><Link to="/">Home</Link></li>
+
+  <li><a href="/#about">About</a></li>
+
+  <li><a href="/#services">Services</a></li>
+
+  <li><a href="/#projects">Projects</a></li>
+
+  <li><Link to="/contact">Contact</Link></li>
+
+  <li><Link to="/quote">Get Quote</Link></li>
+
+</ul>
         </div>
 
         {/* Contact Info */}
@@ -80,7 +95,7 @@ export default function Footer() {
 
       {/* Bottom bar */}
       <div className="footer-bottom">
-        <p>© {new Date().getFullYear()} Omega Solar Services. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} Omega Solar Systems. All rights reserved.</p>
       </div>
     </footer>
   );
