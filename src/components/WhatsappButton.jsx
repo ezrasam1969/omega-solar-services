@@ -1,4 +1,4 @@
-import './WhatsAppButton.css';
+import './WhatsappButton.css';
 
 export default function WhatsAppButton() {
   return (
