@@ -117,14 +117,7 @@ export default function WhatWeOffer() {
             </ul>
           </p>
 
-          <ul>
-            <li>✔ Rooftop solar installation</li>
-            <li>✔ Civil & structural work</li>
-            <li>✔ Electrical integration</li>
-            <li>✔ Industrial & commercial projects</li>
-            <li>✔ Maintenance & upgrades</li>
-          </ul>
-
+  
         </div>
 
         {/* RIGHT SLIDER */}
