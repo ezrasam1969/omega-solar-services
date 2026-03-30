@@ -6,7 +6,7 @@ export default function WhatsAppButton() {
       <span className="whatsapp-tooltip">Chat with us on WhatsApp</span>
 
       <a
-        href="https://wa.me/917995055890?text=Hi,%20I%20am%20interested%20in%20rooftop%20solar%20installation"
+        href="https://wa.me/918978428057?text=Hi,%20I%20am%20interested%20in%20rooftop%20solar%20installation"
         className="whatsapp-float"
         target="_blank"
         rel="noopener noreferrer"

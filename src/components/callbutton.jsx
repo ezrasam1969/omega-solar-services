@@ -6,7 +6,7 @@ export default function CallButton() {
       <span className="call-tooltip">Call us now</span>
 
       <a
-        href="tel:+917995055890"
+        href="tel:+918978428057"
         className="call-float"
         aria-label="Call us"
       >

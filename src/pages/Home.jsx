@@ -5,6 +5,7 @@ import ServicesPreview from '../components/ServicesPreview';
 import ProjectsPreview from '../components/ProjectsPreview';
 import CTA from '../components/CTA';
 import Footer from '../components/Footer';
+import WhatWeOffer from "../components/WhatWeOffer";
 
 
 
@@ -14,6 +15,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <AboutSection/>
+      <WhatWeOffer />
       <ServicesPreview />
       <ProjectsPreview />
       <CTA />

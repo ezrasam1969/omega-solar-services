@@ -8,7 +8,7 @@ export default function AboutSection() {
 
         <div className="about-text">
 
-          <h2>About Omega Solar Systems</h2>
+          <h2>About Omega Solar Power Systems</h2>
 
           <p className="about-main">
             Omega Solar Services is a Hyderabad-based solar installation

@@ -7,7 +7,7 @@ export default function Footer() {
 
         {/* Company Info */}
         <div className="footer-col">
-          <h3>Omega Solar Systems</h3>
+          <h3>Omega Solar Power Systems</h3>
           <p>
             Professional solar installation and civil works for homes,
             commercial buildings, and industries in Hyderabad.
@@ -79,7 +79,7 @@ export default function Footer() {
   </a>
 
   <a
-    href="https://wa.me/917995055890"
+    href="https://wa.me/918978428057"
     target="_blank"
     rel="noopener noreferrer"
     aria-label="WhatsApp"
