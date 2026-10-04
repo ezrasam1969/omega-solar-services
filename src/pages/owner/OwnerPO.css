@@ -1,0 +1,349 @@
+/* ================================
+   OMEGA SOLAR - OWNER PO TOOL
+   ================================ */
+
+.owner-shell {
+  min-height: 100vh;
+  background: #f4f7fa;
+  color: #17212b;
+  padding: 32px 20px 60px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.owner-wrap {
+  width: min(1100px, 100%);
+  margin: 0 auto;
+}
+
+.owner-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+.owner-kicker {
+  color: #123d63;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+  margin-bottom: 7px;
+}
+
+.owner-header h1 {
+  margin: 0;
+  color: #123d63;
+  font-size: 32px;
+  line-height: 1.15;
+}
+
+.owner-header p {
+  margin: 8px 0 0;
+  color: #66727e;
+  font-size: 15px;
+}
+
+.owner-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.po-number {
+  background: #ffffff;
+  border: 1px solid #d7e0e8;
+  border-radius: 8px;
+  padding: 11px 15px;
+  color: #53616d;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.po-number b {
+  color: #123d63;
+  margin-left: 5px;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #dbe3ea;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 18px rgba(18, 61, 99, 0.05);
+}
+
+.card h2 {
+  margin: 0 0 20px;
+  color: #123d63;
+  font-size: 19px;
+  line-height: 1.3;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.pricing-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.field-label {
+  display: block;
+  margin-bottom: 7px;
+  color: #35424d;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.field {
+  width: 100%;
+  min-height: 44px;
+  box-sizing: border-box;
+  border: 1px solid #ccd7e0;
+  border-radius: 7px;
+  background: #ffffff;
+  color: #18232d;
+  padding: 10px 12px;
+  font-size: 14px;
+  outline: none;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+}
+
+.field:focus {
+  border-color: #123d63;
+  box-shadow: 0 0 0 3px rgba(18, 61, 99, 0.1);
+}
+
+.field::placeholder {
+  color: #9aa5ae;
+}
+
+.scope-grid {
+  display: grid;
+  gap: 11px;
+}
+
+.check-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 42px;
+  padding: 10px 12px;
+  border: 1px solid #e0e7ed;
+  border-radius: 7px;
+  background: #fafcfd;
+  cursor: pointer;
+  color: #35424d;
+  font-size: 14px;
+}
+
+.check-row input {
+  width: 17px;
+  height: 17px;
+  accent-color: #123d63;
+}
+
+.closing-box {
+  min-height: 44px;
+  box-sizing: border-box;
+  border-radius: 7px;
+  padding: 9px 13px;
+  background: #123d63;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.closing-box span {
+  font-size: 11px;
+  opacity: 0.8;
+}
+
+.closing-box strong {
+  font-size: 18px;
+  margin-top: 2px;
+}
+
+.action-card {
+  margin-bottom: 0;
+}
+
+.action-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.primary-btn,
+.secondary-btn,
+.install-btn {
+  min-height: 46px;
+  border-radius: 7px;
+  padding: 11px 18px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  transition: 0.2s ease;
+}
+
+.primary-btn {
+  border: 1px solid #123d63;
+  background: #123d63;
+  color: #ffffff;
+}
+
+.primary-btn:hover:not(:disabled) {
+  background: #0d304e;
+}
+
+.primary-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.secondary-btn {
+  border: 1px solid #cbd7e0;
+  background: #ffffff;
+  color: #123d63;
+}
+
+.secondary-btn:hover {
+  background: #f3f7fa;
+}
+
+.install-btn {
+  min-height: 40px;
+  padding: 8px 13px;
+  border: 1px solid #123d63;
+  background: #ffffff;
+  color: #123d63;
+}
+
+.install-btn:hover {
+  background: #eef4f8;
+}
+
+.message {
+  margin: 15px 0 0;
+  padding: 11px 13px;
+  border-radius: 7px;
+  background: #edf6ef;
+  color: #25603a;
+  font-size: 14px;
+}
+
+.message.error {
+  background: #fff0f0;
+  color: #a12a2a;
+}
+
+.muted {
+  color: #6d7882;
+}
+
+@media (max-width: 800px) {
+  .owner-shell {
+    padding: 22px 14px 40px;
+  }
+
+  .owner-header {
+    flex-direction: column;
+  }
+
+  .owner-header-actions {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .form-grid,
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .action-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 18px;
+  }
+
+  .owner-header h1 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 480px) {
+  .owner-header-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .install-btn,
+  .po-number {
+    width: 100%;
+  }
+}
+
+/* ================================
+   OWNER LOGIN
+   ================================ */
+
+.login-shell {
+  min-height: 100vh;
+  background: #f4f7fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.login-card {
+  width: min(440px, 100%);
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid #dbe3ea;
+  border-radius: 12px;
+  padding: 34px;
+  box-shadow: 0 10px 35px rgba(18, 61, 99, 0.08);
+}
+
+.login-card h1 {
+  margin: 0;
+  color: #123d63;
+  font-size: 28px;
+}
+
+.login-card p {
+  margin: 7px 0 25px;
+  color: #66727e;
+}
+
+.login-card .primary-btn {
+  width: 100%;
+  margin-top: 22px;
+}
+
+.login-card .field-label {
+  margin-top: 14px;
+}
+
+.login-card .owner-kicker {
+  margin-bottom: 10px;
+}

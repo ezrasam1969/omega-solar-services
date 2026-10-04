@@ -1,0 +1,25 @@
+{
+  "name": "Omega Solar Purchase Order",
+  "short_name": "Omega PO",
+  "description": "Omega Solar Power Systems Purchase Order Generator",
+  "start_url": "/owner/purchase-order",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#123d63",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

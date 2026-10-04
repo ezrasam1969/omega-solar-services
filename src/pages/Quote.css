@@ -1,42 +1,197 @@
-.quote {
-  padding: 80px 40px;
-  max-width: 600px;
-  margin: auto;
+.quote-section {
+  padding: 100px 0 80px 0;
+  background-color: #f8fafc;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
 }
 
-.quote h1 {
-  font-size: 32px;
+.quote-container {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 0 24px;
+  width: 100%;
+}
+
+.quote-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.quote-badge {
+  display: inline-block;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: #059669;
+  background: rgba(16, 185, 129, 0.1);
+  padding: 6px 14px;
+  border-radius: 50px;
+  border: 1px solid rgba(16, 185, 129, 0.25);
   margin-bottom: 12px;
 }
 
-.quote p {
-  margin-bottom: 32px;
+.quote-title {
+  font-size: 34px;
+  font-weight: 800;
+  color: #0b2a4a;
+  margin-bottom: 12px;
+}
+
+.quote-subtitle {
+  font-size: 15.5px;
+  color: #64748b;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.quote-card-wrap {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 36px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 16px 40px rgba(11, 42, 74, 0.06);
 }
 
 .quote-form {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 18px;
 }
 
-.quote-form input,
-.quote-form select,
-.quote-form textarea {
-  padding: 14px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+.form-group-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-field label {
+  font-size: 13px;
+  font-weight: 700;
+  color: #0b2a4a;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+  padding: 12px 16px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  font-size: 14.5px;
+  color: #0f172a;
+  background: #f8fafc;
+  outline: none;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+  border-color: #10b981;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.15);
+}
+
+/* 🟢 PROMINENT GREEN SUBMIT BUTTON */
+.quote-submit-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: #ffffff;
+  padding: 16px 28px;
+  font-size: 16.5px;
+  font-weight: 800;
+  border-radius: 12px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 10px 25px rgba(16, 185, 129, 0.3);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  margin-top: 10px;
+  width: 100%;
+}
+
+.quote-submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(16, 185, 129, 0.4);
+  background: linear-gradient(135deg, #059669 0%, #047857 100%);
+}
+
+.quote-submit-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.submit-spinner {
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: #ffffff;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.quote-success-box {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.success-icon {
+  font-size: 48px;
+  margin-bottom: 12px;
+}
+
+.quote-success-box h3 {
+  font-size: 22px;
+  color: #059669;
+  margin-bottom: 10px;
+}
+
+.quote-success-box p {
   font-size: 15px;
+  color: #475569;
+  margin-bottom: 24px;
 }
 
-.quote-form textarea {
-  min-height: 100px;
+.btn-submit-again {
+  background: #0b2a4a;
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
 }
 
-.quote-form button {
-  background-color: var(--green);
-  color: white;
-  padding: 14px;
-  font-size: 16px;
+.quote-error-banner {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #dc2626;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 14px;
   font-weight: 600;
-  border-radius: 4px;
+}
+
+@media (max-width: 640px) {
+  .form-group-row {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .quote-card-wrap {
+    padding: 24px 18px;
+  }
 }

@@ -1,8 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+
 :root {
+  --navy-deep: #06182c;
+  --navy-primary: #0b2a4a;
+  --navy-light: #1e293b;
+  --navy-card: #0f172a;
+  
+  --green-primary: #10b981;
+  --green-hover: #059669;
+  --green-light: #ecfdf5;
+  --green-accent: #34d399;
+  
+  --gold-accent: #fbbf24;
+  --gray-bg: #f8fafc;
+  --gray-border: #e2e8f0;
+  --text-dark: #0f172a;
+  --text-muted: #64748b;
   --white: #ffffff;
-  --blue: #0b2a4a;
-  --green: #1fa84f;
-  --gray: #f5f7fa;
+  
+  --font-heading: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 * {
@@ -11,11 +28,26 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-body);
   background-color: var(--white);
-  color: var(--blue);
+  color: var(--text-dark);
   line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--navy-primary);
+  font-weight: 800;
+  line-height: 1.2;
 }
 
 a {
@@ -26,25 +58,58 @@ a {
 button {
   cursor: pointer;
   border: none;
+  font-family: var(--font-heading);
 }
 
-html {
-  scroll-behavior: smooth;
+/* Scroll-Triggered Fade-In Animations */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
 }
 
-/* Mobile responsiveness */
+.reveal-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Diagonal Section Dividers */
+.diagonal-divider-top {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  position: relative;
+  z-index: 2;
+  margin-top: -1px;
+}
+
+.diagonal-divider-top svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 60px;
+}
+
+.diagonal-divider-bottom {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  position: relative;
+  z-index: 2;
+  margin-bottom: -1px;
+}
+
+.diagonal-divider-bottom svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 60px;
+}
+
+/* Typography scale adjustments */
 @media (max-width: 768px) {
-
   body {
     font-size: 15px;
   }
-
-  h1 {
-    font-size: 28px;
-  }
-
-  h2 {
-    font-size: 24px;
-  }
-
 }
