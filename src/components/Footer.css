@@ -11,8 +11,10 @@
   margin: 0 auto;
   padding: 0 24px 60px 24px;
   display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1.2fr);
   gap: 48px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* Brand Column */
@@ -163,19 +165,25 @@
 /* Responsive */
 @media (max-width: 992px) {
   .footer-container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 40px;
   }
 }
 
 @media (max-width: 640px) {
+  .footer-section {
+    padding: 60px 0 0 0;
+  }
+
   .footer-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 32px;
+    padding: 0 16px 40px 16px;
   }
 
   .footer-bottom-container {
     flex-direction: column;
     text-align: center;
+    padding: 0 16px;
   }
 }

@@ -8,18 +8,23 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 24px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .about-grid {
   display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
   gap: 60px;
   align-items: center;
+  width: 100%;
 }
 
 /* Left Image Column */
 .about-image-column {
   position: relative;
+  width: 100%;
+  min-width: 0;
 }
 
 .about-image-frame {
@@ -93,6 +98,8 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width: 100%;
+  min-width: 0;
 }
 
 .section-pill {
@@ -136,7 +143,7 @@
 /* Features Check Grid */
 .about-features-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;
   width: 100%;
   margin-bottom: 32px;
@@ -194,7 +201,7 @@
 /* Mobile Responsiveness */
 @media (max-width: 992px) {
   .about-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 40px;
   }
 
@@ -203,7 +210,7 @@
   }
 
   .about-features-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 }
 
@@ -212,7 +219,28 @@
     padding: 60px 0;
   }
 
+  .about-container {
+    padding: 0 16px;
+  }
+
+  .about-badge-card {
+    bottom: 12px;
+    left: 12px;
+    right: 12px;
+    padding: 12px 14px;
+    gap: 12px;
+  }
+
+  .badge-icon-box {
+    width: 40px;
+    height: 40px;
+  }
+
+  .badge-num {
+    font-size: 17px;
+  }
+
   .about-img {
-    height: 340px;
+    height: 300px;
   }
 }

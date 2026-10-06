@@ -10,6 +10,8 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 24px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* Section Header */
@@ -54,13 +56,16 @@
 .carousel-wrapper {
   position: relative;
   max-width: 860px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 60px;
+  box-sizing: border-box;
 }
 
 .carousel-track-container {
   overflow: hidden;
   border-radius: 20px;
+  width: 100%;
 }
 
 .carousel-track {
@@ -71,6 +76,8 @@
 
 .testimonial-card-slide {
   min-width: 100%;
+  max-width: 100%;
+  width: 100%;
   box-sizing: border-box;
   padding: 10px;
 }
@@ -85,6 +92,8 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* Card Top Row */
@@ -267,6 +276,10 @@
 @media (max-width: 768px) {
   .testimonials-section {
     padding: 60px 0;
+  }
+
+  .testimonials-container {
+    padding: 0 16px;
   }
 
   .testimonials-title {

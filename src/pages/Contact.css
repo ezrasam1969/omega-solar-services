@@ -1,11 +1,15 @@
 .contact-page {
-  padding: 80px 40px;
+  padding: 80px 24px;
   background: #f5f7fa;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .contact-container {
   max-width: 1100px;
   margin: auto;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .contact-page h1 {
@@ -19,19 +23,20 @@
 }
 
 /* Layout grid */
-
 .contact-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: 40px;
+  width: 100%;
 }
 
 /* Contact info */
-
 .contact-info {
   background: white;
   padding: 30px;
   border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .contact-info h3 {
@@ -43,11 +48,11 @@
 }
 
 /* Buttons */
-
 .contact-buttons {
   margin-top: 20px;
   display: flex;
   gap: 12px;
+  flex-wrap: wrap;
 }
 
 .call-btn {
@@ -65,11 +70,12 @@
 }
 
 /* Form */
-
 .contact-form {
   background: white;
   padding: 30px;
   border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .contact-form input,
@@ -79,6 +85,7 @@
   margin-bottom: 14px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  box-sizing: border-box;
 }
 
 .contact-form button {
@@ -102,9 +109,10 @@
 }
 
 /* Map */
-
 .contact-map {
   margin-top: 50px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .contact-map iframe {
@@ -115,11 +123,25 @@
 }
 
 /* Mobile */
-
 @media (max-width: 768px) {
-
-  .contact-grid {
-    grid-template-columns: 1fr;
+  .contact-page {
+    padding: 40px 16px;
   }
 
+  .contact-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+  }
+
+  .contact-info, .contact-form {
+    padding: 20px 16px;
+  }
+
+  .contact-buttons {
+    flex-direction: column;
+  }
+
+  .call-btn, .whatsapp-btn {
+    text-align: center;
+  }
 }

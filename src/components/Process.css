@@ -10,6 +10,8 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 24px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* Header Section */
@@ -54,6 +56,7 @@
 .timeline-container {
   position: relative;
   margin-bottom: 60px;
+  width: 100%;
 }
 
 .timeline-connecting-line {
@@ -69,10 +72,11 @@
 
 .process-steps-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 24px;
   position: relative;
   z-index: 2;
+  width: 100%;
 }
 
 /* Step Card Styling */
@@ -86,6 +90,9 @@
   position: relative;
   transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
 }
 
 .step-card:hover {
@@ -238,7 +245,7 @@
 /* Responsive Layout */
 @media (max-width: 1024px) {
   .process-steps-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 24px;
   }
 
@@ -263,12 +270,16 @@
     padding: 60px 0;
   }
 
+  .process-container {
+    padding: 0 16px;
+  }
+
   .process-title {
     font-size: 28px;
   }
 
   .process-steps-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 16px;
   }
 

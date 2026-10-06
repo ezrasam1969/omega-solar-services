@@ -226,6 +226,10 @@
     padding: 60px 0;
   }
 
+  .faq-container {
+    padding: 0 16px;
+  }
+
   .faq-title {
     font-size: 28px;
   }

@@ -38,9 +38,10 @@
 /* Grid Layout */
 .hero-grid {
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
   gap: 48px;
   align-items: center;
+  width: 100%;
 }
 
 /* Content Column */
@@ -337,7 +338,7 @@
 /* Responsive Styles */
 @media (max-width: 1024px) {
   .hero-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 40px;
   }
 
@@ -354,6 +355,10 @@
   .hero-section {
     padding: 60px 0;
     min-height: auto;
+  }
+
+  .hero-container {
+    padding: 0 16px;
   }
 
   .hero-title {
